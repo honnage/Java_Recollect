@@ -13,5 +13,17 @@ public class IntroJava {
 
         love = 10;
         System.out.println(msg + love);
+
+        //Boolean
+        boolean isLove = true;
+        if (isLove == true){
+            System.out.println("love is " + isLove + ", Yes");
+        }else{
+            System.out.println("love is " + isLove + ", No");
+        }
+
+        //Charcater
+        char i = 't';
+        System.out.println(i);
     }
 }
