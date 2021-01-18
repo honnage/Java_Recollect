@@ -10,11 +10,32 @@ public class FunctionJava {
         boolean isRunning = isRunning();
         System.out.println("It is running "+ isRunning);
 
+        //Function with single arguments
         printIt("hon");
+        int count = 0;
+        count(count++);
+        count(count++);
+        count(count++);
+        count(count++);
+
+        //Function with multiple arguments
+        int combinedValue = combine(2,3, "after combined");
+        System.out.println("Return is " + combinedValue);
     }
 
-    private static void printIt(String hello_hon) {
-        System.out.println("It is " + hello_hon);
+    public static int combine(int a, int b, String msg) {
+        int output = a + b;
+        System.out.println(msg );
+
+        return output;
+    }
+
+    public static void count(int count) {
+        System.out.println(count);
+    }
+
+    private static void printIt(String hon) {
+        System.out.println("It is " + hon);
     }
 
     public static  boolean isRunning(){
